@@ -1,0 +1,20 @@
+1|8505F:/sys # cat bootinfo/hardware_info                                                                                                                                                                                                    
+LCD : ft8201_wxga_vdo_incell_boe
+TP : BOE,FT8201,FW:0x18
+CAM_FRONT : GC2375H
+CAM_BACK : HI556D
+BT : MT6631
+WIFI : MT6631
+GSENSOR : mc3416_acc
+PLSENSOR : NULL, NULL
+GYROSENSOR : NULL
+MSENSOR : NULL
+SAR : SX9311
+GPS : MT6631
+FM : MT6631
+BATTERY : M8_SCUD_4V43_5000mah
+CHARGER : RT9471
+CAM_SUB_MAIN_MODULE : HS6472B1D
+CAM_FRONT_MODULE : ST-WTP98328AA1FF
+BOARD_ID : Akita_WIFI
+8505F:/sys # 
