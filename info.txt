@@ -1,0 +1,141 @@
+TB8505F:/dev/block/by-name # file *
+boot:         symbolic link
+boot_para:    symbolic link
+cache:        symbolic link
+dtbo:         symbolic link
+expdb:        symbolic link
+flashinfo:    symbolic link
+frp:          symbolic link
+gz1:          symbolic link
+gz2:          symbolic link
+lenovocust:   symbolic link
+lenovoraw:    symbolic link
+lk:           symbolic link
+lk2:          symbolic link
+logo:         symbolic link
+md1img:       symbolic link
+metadata:     symbolic link
+mmcblk0:      symbolic link
+mmcblk0boot0: symbolic link
+mmcblk0boot1: symbolic link
+mmcblk0rpmb:  symbolic link
+nvcfg:        symbolic link
+nvdata:       symbolic link
+nvram:        symbolic link
+otp:          symbolic link
+para:         symbolic link
+persist:      symbolic link
+product:      symbolic link
+proinfo:      symbolic link
+protect1:     symbolic link
+protect2:     symbolic link
+recovery:     symbolic link
+scp1:         symbolic link
+scp2:         symbolic link
+sec1:         symbolic link
+seccfg:       symbolic link
+spmfw:        symbolic link
+sspm_1:       symbolic link
+sspm_2:       symbolic link
+system:       symbolic link
+tee1:         symbolic link
+tee2:         symbolic link
+userdata:     symbolic link
+vbmeta:       symbolic link
+vendor:       symbolic link
+TB8505F:/dev/block/by-name # 
+
+
+
+
+TB8505F:/dev/block/by-name # ls
+boot      cache expdb     frp gz2        lenovoraw lk2  md1img   mmcblk0      mmcblk0boot1 nvcfg  nvram para    product protect1 recovery scp2 seccfg sspm_1 system tee2     vbmeta 
+boot_para dtbo  flashinfo gz1 lenovocust lk        logo metadata mmcblk0boot0 mmcblk0rpmb  nvdata otp   persist proinfo protect2 scp1     sec1 spmfw  sspm_2 tee1   userdata vendor 
+TB8505F:/dev/block/by-name # 
+
+
+
+TB8505F:/dev/block/by-name # uname -a
+Linux localhost 4.9.190+ #1 SMP PREEMPT Fri May 28 20:48:29 CST 2021 aarch64
+TB8505F:/dev/block/by-name # 
+
+
+
+- from rooted original software
+
+
+
+
+8505F:/dev # lsmod
+Module                  Size  Used by
+wlan_drv_gen4m       1998848  0 
+wmt_chrdev_wifi        28672  1 wlan_drv_gen4m
+gps_drv                65536  0 
+fmradio_drv           188416  0 
+bt_drv                 28672  0 
+wmt_drv              1187840  6 wlan_drv_gen4m,wmt_chrdev_wifi,gps_drv,fmradio_drv,bt_drv
+fpsgo                 811008  0 
+8505F:/dev # 
+8505F:/dev # 
+8505F:/dev # 
+
+
+
+
+
+
+
+
+8505F:/ # mount 
+tmpfs on /dev type tmpfs (rw,seclabel,nosuid,relatime,mode=755)
+devpts on /dev/pts type devpts (rw,seclabel,relatime,mode=600,ptmxmode=000)
+proc on /proc type proc (rw,relatime,gid=3009,hidepid=2)
+sysfs on /sys type sysfs (rw,seclabel,relatime)
+selinuxfs on /sys/fs/selinux type selinuxfs (rw,relatime)
+tmpfs on /mnt type tmpfs (rw,seclabel,nosuid,nodev,noexec,relatime,mode=755,gid=1000)
+tmpfs on /apex type tmpfs (rw,seclabel,nosuid,nodev,noexec,relatime,mode=755)
+/dev/block/dm-0 on / type ext4 (ro,seclabel,nodev,relatime)
+/dev/block/dm-1 on /vendor type ext4 (ro,seclabel,relatime)
+magisk on /sbin type tmpfs (rw,seclabel,relatime,mode=755)
+devpts on /sbin/.magisk/pts type devpts (rw,seclabel,nosuid,noexec,relatime,mode=600,ptmxmode=000)
+none on /dev/cg2_bpf type cgroup2 (rw,nosuid,nodev,noexec,relatime)
+none on /dev/cpuctl type cgroup (rw,nosuid,nodev,noexec,relatime,cpu)
+none on /acct type cgroup (rw,nosuid,nodev,noexec,relatime,cpuacct)
+none on /dev/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset,noprefix,release_agent=/sbin/cpuset_release_agent)
+none on /dev/stune type cgroup (rw,nosuid,nodev,noexec,relatime,schedtune)
+/dev/block/dm-0 on /apex/com.android.tzdata@290000000 type ext4 (ro,seclabel,relatime)
+/dev/block/dm-0 on /apex/com.android.tzdata type ext4 (ro,seclabel,relatime)
+/dev/block/dm-0 on /apex/com.android.runtime@1 type ext4 (ro,seclabel,relatime)
+/dev/block/dm-0 on /apex/com.android.runtime type ext4 (ro,seclabel,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,seclabel,relatime)
+tracefs on /sys/kernel/debug/tracing type tracefs (rw,seclabel,relatime)
+none on /config type configfs (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime)
+pstore on /sys/fs/pstore type pstore (rw,seclabel,nosuid,nodev,noexec,relatime)
+/dev/block/mmcblk0p32 on /cache type ext4 (rw,seclabel,nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered)
+/dev/block/mmcblk0p9 on /mnt/vendor/protect_f type ext4 (rw,seclabel,nosuid,nodev,noatime,nodelalloc,noauto_da_alloc,commit=1,data=ordered)
+/dev/block/mmcblk0p10 on /mnt/vendor/protect_s type ext4 (rw,seclabel,nosuid,nodev,noatime,nodelalloc,noauto_da_alloc,commit=1,data=ordered)
+/dev/block/mmcblk0p7 on /mnt/vendor/nvdata type ext4 (rw,seclabel,nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered)
+/dev/block/mmcblk0p6 on /mnt/vendor/nvcfg type ext4 (rw,seclabel,nosuid,nodev,noatime,nodelalloc,noauto_da_alloc,commit=1,data=ordered)
+/dev/block/mmcblk0p15 on /mnt/vendor/persist type ext4 (rw,seclabel,nosuid,nodev,noatime,nodelalloc,noauto_da_alloc,commit=1,data=ordered)
+tmpfs on /storage type tmpfs (rw,seclabel,nosuid,nodev,noexec,relatime,mode=755,gid=1000)
+adb on /dev/usb-ffs/adb type functionfs (rw,relatime)
+/dev/block/dm-0 on /apex/com.android.conscrypt@290000000 type ext4 (ro,seclabel,nodev,relatime)
+/dev/block/dm-0 on /apex/com.android.conscrypt type ext4 (ro,seclabel,nodev,relatime)
+/dev/block/dm-0 on /apex/com.android.media@290000000 type ext4 (ro,seclabel,nodev,relatime)
+/dev/block/dm-0 on /apex/com.android.media type ext4 (ro,seclabel,nodev,relatime)
+/dev/block/dm-0 on /apex/com.android.media.swcodec@290000000 type ext4 (ro,seclabel,nodev,relatime)
+/dev/block/dm-0 on /apex/com.android.media.swcodec type ext4 (ro,seclabel,nodev,relatime)
+/dev/block/dm-0 on /apex/com.android.resolv@290000000 type ext4 (ro,seclabel,nodev,relatime)
+/dev/block/dm-0 on /apex/com.android.resolv type ext4 (ro,seclabel,nodev,relatime)
+/dev/block/mmcblk0p33 on /lenovocust type ext4 (rw,seclabel,nosuid,nodev,noatime,data=ordered)
+/dev/block/dm-2 on /data type ext4 (rw,seclabel,nosuid,nodev,noatime,nobarrier,noauto_da_alloc,errors=panic,data=ordered)
+/data/media on /mnt/runtime/default/emulated type sdcardfs (rw,nosuid,nodev,noexec,noatime,fsuid=1023,fsgid=1023,gid=1015,multiuser,mask=6,derive_gid,default_normal,reserved=250MB)
+/data/media on /storage/emulated type sdcardfs (rw,nosuid,nodev,noexec,noatime,fsuid=1023,fsgid=1023,gid=1015,multiuser,mask=6,derive_gid,default_normal,reserved=250MB)
+/data/media on /mnt/runtime/read/emulated type sdcardfs (rw,nosuid,nodev,noexec,noatime,fsuid=1023,fsgid=1023,gid=9997,multiuser,mask=23,derive_gid,default_normal,reserved=250MB)
+/data/media on /mnt/runtime/write/emulated type sdcardfs (rw,nosuid,nodev,noexec,noatime,fsuid=1023,fsgid=1023,gid=9997,multiuser,mask=7,derive_gid,default_normal,reserved=250MB)
+/data/media on /mnt/runtime/full/emulated type sdcardfs (rw,nosuid,nodev,noexec,noatime,fsuid=1023,fsgid=1023,gid=9997,multiuser,mask=7,derive_gid,default_normal,reserved=250MB)
+8505F:/ # 
+
+
+
